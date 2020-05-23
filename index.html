@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+    <title>HTML/CSS/JS</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+
+    <script src="js/jquery-1.9.1.js" type="text/javascript"></script>
+    <script src="js/myscript.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <div id="mainNav">
+
+            <div id="logo">
+                <h1>CodeWriter</h1>
+            </div>
+
+            <div id="buttonDiv">
+                <button id="runButton">Run</button>
+            </div>
+
+            <ul id="toggles">
+                <li class="toggle selected">HTML</li>
+                <li class="toggle">CSS</li>
+                <li class="toggle">JS</li>
+                <li class="toggle selected">RESULT</li>
+            </ul>
+
+        </div> <!--End of #mainNav-->
+
+        <div class="clear"></div>
+
+        <div id="htmlContainer" class="codeContainer">
+            <div class="codeLabel">HTML</div>
+            <textarea id="htmlCode"></textarea>
+        </div>
+
+        <div id="cssContainer" class="codeContainer">
+            <div class="codeLabel">CSS</div>
+            <textarea id="cssCode"></textarea>
+        </div>
+
+        <div id="jsContainer" class="codeContainer">
+            <div class="codeLabel">JS</div>
+            <textarea id="jsCode"></textarea>
+        </div>
+
+        <div id="resultContainer" class="codeContainer">
+            <div class="codeLabel">Result</div>
+            <iframe id="resultFrame"></iframe>
+        </div>
+
+    </div> <!--End of #wrapper-->
+
+</body>
+</html>
